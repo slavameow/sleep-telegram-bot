@@ -16,6 +16,7 @@ async function loadScene(path) {
 
 		return module.default;
 	} catch (error) {
+		console.log(error);
 		// prettier-ignore
 		logger.error(`[SCENE_LOADER] Ошибка загрузки сцены ${path}:`, error.message);
 		throw new Error(`Ошибка инициализации сцены: ${path}`);

@@ -5,6 +5,7 @@
       "name": "sleep-telegram-bot",
       "dependencies": {
         "@gramio/format": "^0.3.1",
+        "@mistralai/mistralai": "^1.6.0",
         "@prisma/client": "^6.7.0",
         "chalk": "^5.4.1",
         "crypto": "^1.0.1",
@@ -15,6 +16,7 @@
         "telegram": "^2.26.22",
         "winston": "^3.17.0",
         "ws": "^8.18.2",
+        "zod": "^3.24.4",
       },
       "devDependencies": {
         "@types/bun": "latest",
@@ -34,6 +36,8 @@
     "@gramio/format": ["@gramio/format@0.3.1", "", { "dependencies": { "@gramio/types": "^9.0.1" }, "peerDependencies": { "marked": "^15.0.11" }, "optionalPeers": ["marked"] }, "sha512-7d6r20U3t4drOdCJ37Iai1J63ywXo9HpLDckz51DFVbv76a0Wv2R+WdCT1Yk0DvB+6QOjagmF5ZKnYePIRybdg=="],
 
     "@gramio/types": ["@gramio/types@9.0.2", "", {}, "sha512-6YQ9wO1gXgScLd1yfNZLYhi4+GxF4buyQfIKmVdef/ooZEaiQ01lV9rTy0SxC7IyA4mvLr5H21qPyp2Zlr8BSw=="],
+
+    "@mistralai/mistralai": ["@mistralai/mistralai@1.6.0", "", { "dependencies": { "zod-to-json-schema": "^3.24.1" }, "peerDependencies": { "zod": ">= 3" } }, "sha512-PQwGV3+n7FbE7Dp3Vnd8DAa3ffx6WuVV966Gfmf4QvzwcO3Mvxpz0SnJ/PjaZcsCwApBCZpNyQzvarAKEQLKeQ=="],
 
     "@prisma/client": ["@prisma/client@6.7.0", "", { "peerDependencies": { "prisma": "*", "typescript": ">=5.1.0" }, "optionalPeers": ["prisma", "typescript"] }, "sha512-+k61zZn1XHjbZul8q6TdQLpuI/cvyfil87zqK2zpreNIXyXtpUv3+H/oM69hcsFcZXaokHJIzPAt5Z8C8eK2QA=="],
 
@@ -296,6 +300,10 @@
     "ws": ["ws@8.18.2", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ=="],
 
     "yaeti": ["yaeti@0.0.6", "", {}, "sha512-MvQa//+KcZCUkBTIC9blM+CU9J2GzuTytsOUwf2lidtvkx/6gnEp1QvJv34t9vdjhFmha/mUiNDbN0D0mJWdug=="],
+
+    "zod": ["zod@3.24.4", "", {}, "sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg=="],
+
+    "zod-to-json-schema": ["zod-to-json-schema@3.24.5", "", { "peerDependencies": { "zod": "^3.24.1" } }, "sha512-/AuWwMP+YqiPbsJx5D6TfgRTc4kTLjsh5SOcd4bLsfUg2RcEXrFMJl1DGgdHy2aCfsIA/cr/1JM0xcB2GZji8g=="],
 
     "color-string/color-name": ["color-name@1.1.4", "", {}, "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA=="],
 
